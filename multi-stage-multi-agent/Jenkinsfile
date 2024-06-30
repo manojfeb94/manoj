@@ -8,7 +8,7 @@ pipeline {
       steps {
 
         script{
-          sh "$mvn clean install"
+          sh "mvn clean install"
           sh 'java -cp target/hello-world-1.0-SNAPSHOT.jar com.helloworld'
       }}
       
