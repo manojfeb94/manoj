@@ -1,3 +1,3 @@
-def call() {
-  sh 'echo Hi From DevOps Team'
+def call(String name = 'User') {
+		echo "Welcome, ${name}."
 }
