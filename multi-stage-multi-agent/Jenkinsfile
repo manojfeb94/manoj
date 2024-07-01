@@ -6,7 +6,7 @@ pipeline {
         docker { image 'maven:3.8.1-adoptopenjdk-11' }
       }
       steps {
-              sh 'echo manoj is good'
+              sh 'echo manoj is good boy'
         script{
           sh "mvn clean install"
           sh 'java -cp target/hello-world-1.0-SNAPSHOT.jar com.helloworld'
